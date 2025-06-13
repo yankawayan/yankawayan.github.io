@@ -1,7 +1,47 @@
+
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Tech Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>My Tech Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#">自己紹介</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="filters">
+      <input type="text" id="search-box" placeholder="キーワード検索" />
+      <button id="search-button">検索</button>
+      <select id="category-filter">
+        <option value="">全カテゴリ</option>
+        <option value="Minecraft">Minecraft</option>
+        <option value="Tetris">Tetris</option>
+      </select>
+      <select id="tag-filter">
+        <option value="">全タグ</option>
+        <option value="AI">AI</option>
+        <option value="3D">3D</option>
+        <option value="Pathfinding">Pathfinding</option>
+      </select>
+    </div>
+
+    <ul id="post-list"></ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Tech Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
 </html>

@@ -1,0 +1,21 @@
+[
+  {
+    "title": "MineflayerでAIプレイヤーを作る",
+    "date": "2025-06-07",
+    "file": "2025-06-07-mineflayer-ai.html",
+    "category": "Minecraft",
+    "tags": [
+      "AI",
+      "Pathfinding"
+    ]
+  },
+  {
+    "title": "3Dテトリス開発のコツ",
+    "date": "2025-06-05",
+    "file": "2025-06-05-tetris-3d-tips.html",
+    "category": "Tetris",
+    "tags": [
+      "3D"
+    ]
+  }
+]
