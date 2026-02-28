@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>敗北ログ掲示板 v1.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>敗北ログ掲示板 v1.0</h1>
+
+    <form onsubmit="return addLog()" >
+        <!-- ログ入力 -->
+        <input type="text" id="title" placeholder="試作名">
+
+        <textarea id="change" placeholder="変更点"></textarea>
+
+        <select id="result" aria-placeholder="進化">
+            <option value="進化">進化</option>
+            <option value="敗北">敗北</option>
+            <option value="保留">保留</option>
+        </select>
+
+        <button type="submit">追加</button>
+    </form>
+
+    <!-- ログ一覧 -->
+    <div id="filter">
+        <button onclick="setFilter('all')">全て</button>
+        <button onclick="setFilter('進化')">進化</button>
+        <button onclick="setFilter('敗北')">敗北</button>
+        <button onclick="setFilter('保留')">保留</button>
+    </div>
+
+    <!-- ログ一覧 -->
+    <ul id="logList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- ローカルストレージについて -->
+<!-- ローカルストレージは、ウェブブラウザにデータを保存するための機能で、JavaScriptを使用してアクセスできます。ローカルストレージは、ユーザーのブラウザにデータを永続的に保存することができ、ページをリロードしてもデータが保持されます。ローカルストレージには以下のような特徴があります: 
+- データはキーと値のペアで保存されます。
+- データは文字列として保存されます。オブジェクトや配列など
+    を保存する場合は、JSON.stringify()を使用して文字列に変換する必要があります。
+- データは同一オリジンポリシーに従って、”同じドメイン”のページからのみアクセスできます。
+- データはブラウザのストレージ容量に制限があります（通常は数MB程度）。
+ローカルストレージを使用するには、以下のメソッドを使用します:
+- setItem(key, value): 指定したキーと値を保存します。
+- getItem(key): 指定したキーに対応する値を取得します。
+- removeItem(key): 指定したキーと対応する値を削除します。
+- clear(): すべての保存されたデータを削除します。
+ -->
