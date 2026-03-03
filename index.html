@@ -2,37 +2,11 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>敗北ログ掲示板 v1.0</title>
-  <link rel="stylesheet" href="style.css">
+  <title></title>
+  <!-- <link rel="stylesheet" href=""> -->
 </head>
 <body>
-    <h1>敗北ログ掲示板 v1.0</h1>
 
-    <form onsubmit="return addLog()" >
-        <!-- ログ入力 -->
-        <input type="text" id="title" placeholder="試作名">
-
-        <textarea id="change" placeholder="変更点"></textarea>
-
-        <select id="result" aria-placeholder="進化">
-            <option value="進化">進化</option>
-            <option value="敗北">敗北</option>
-            <option value="保留">保留</option>
-        </select>
-
-        <button type="submit">追加</button>
-    </form>
-
-    <!-- ログ一覧 -->
-    <div id="filter">
-        <button onclick="setFilter('all')">全て</button>
-        <button onclick="setFilter('進化')">進化</button>
-        <button onclick="setFilter('敗北')">敗北</button>
-        <button onclick="setFilter('保留')">保留</button>
-    </div>
-
-    <!-- ログ一覧 -->
-    <ul id="logList"></ul>
 
     <script src="script.js"></script>
 </body>
